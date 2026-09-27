@@ -1,41 +1,58 @@
 # 💳 Multi-User ATM Machine using Verilog HDL
 
-> **Finite State Machine (FSM) based RTL Design for Secure Multi-User Banking Transactions**
+> **Finite State Machine (FSM) Based RTL Design for Secure Multi-User Banking Transactions**
 
 ![Project Banner](atm_banner.png)
 
 ## 🚀 Project Overview
 
-This RTL design models an ATM controller that supports multiple users through individual card numbers, PINs, and account balances while maintaining a shared ATM cash balance and currency note inventory.
+The **Multi-User ATM Machine** is a Finite State Machine (FSM) based RTL design implemented in **Verilog HDL**. This project simulates the core functionality of an Automated Teller Machine by providing secure authentication and banking operations for multiple users through a single hardware controller.
 
-The design is implemented using **Verilog HDL** and functionally verified using **Vivado Simulator**.
+The ATM controller manages individual user accounts while maintaining a shared ATM cash balance and currency note inventory. The design is functionally verified using the **Vivado Simulator (XSim)**.
+
+---
 
 ## ✨ Features
 
-- 💳 Multi-user card authentication
-- 🔐 PIN verification with 3-attempt card lock security
-- 💰 Cash Withdrawal
-- 💵 Cash Deposit
-- 📊 Balance Enquiry
-- 🔄 PIN Change functionality
-- 🏧 ATM cash balance management
-- 💸 Currency note distribution (₹500, ₹200, and ₹100 notes)
-- ⚙️ FSM-based RTL Design
-- ✅ Functional verification using Vivado
+- 💳 Multi-user card authentication.
+- 🔐 PIN verification with **3-attempt card lock** security.
+- 💰 Cash Withdrawal.
+- 💵 Cash Deposit.
+- 📊 Balance Enquiry.
+- 🔄 PIN Change functionality.
+- 🏧 ATM cash balance management.
+- 💸 Currency note distribution (₹500, ₹200, and ₹100 notes).
+- ⚙️ FSM-based RTL Design.
+- ✅ Functional verification using Vivado.
+
+---
+
+## 🌟 Project Highlights
+
+| **Feature** | **Description** |
+|-------------|-----------------|
+| 🔐 Authentication | Multi-user card and PIN verification |
+| 💰 Transactions | Withdrawal, Deposit, Balance Enquiry, and PIN Change |
+| 🏧 Cash Management | ATM cash balance and note inventory tracking |
+| 🔄 Security | Card lock after three consecutive incorrect PIN attempts |
+| ⚙️ RTL Design | FSM-based implementation in Verilog HDL |
+| 🧪 Verification | Functional simulation using Vivado Simulator (XSim) |
+
+---
 
 ## 🛠️ Tools Used
 
 - **Language:** Verilog HDL
+- **RTL Design & Schematic:** Xilinx Vivado
 - **Simulation:** Vivado Simulator (XSim)
-- **RTL Schematic:** Xilinx Vivado
-
-## 📸 Project Preview
-
-The following figures show the overall architecture and verification of the Multi-User ATM Machine.
 
 ---
 
-### 🔷 Finite State Machine (FSM)
+# 📸 Project Preview
+
+The following figures illustrate the architecture and verification of the Multi-User ATM Machine.
+
+## 🔷 Finite State Machine (FSM)
 
 ![ATM FSM](atm_fsm.png)
 
@@ -52,34 +69,38 @@ The ATM controller consists of **11 FSM states**:
 9. CHANGE_PIN
 10. CARD_LOCKED
 11. EJECT_CARD
-12. 
+
 The FSM controls the complete ATM workflow, from card insertion and PIN verification to transaction processing and card ejection.
 
 ---
 
-### 🔷 RTL Schematic (Vivado)
+## 🔷 RTL Schematic (Vivado)
 
 ![RTL Schematic](atm_schematic.png)
 
-The RTL schematic generated in **Vivado** shows the hardware implementation of the ATM controller and its FSM-based architecture.
+The RTL schematic generated in **Vivado** represents the hardware architecture of the FSM-based ATM controller, including authentication, transaction processing, and security logic.
 
 ---
 
-### 🔷 Functional Simulation (Vivado)
+## 🔷 Functional Simulation (Vivado)
 
 ![Simulation Waveform](atm_sim.png)
 
-The Vivado simulation waveform verifies the complete functionality of the ATM controller, including authentication, withdrawal, deposit, balance enquiry, PIN change, and card locking.
+The Vivado simulation waveform verifies the complete functionality of the ATM controller, including card authentication, withdrawal, deposit, balance enquiry, PIN change, and card locking.
+
+---
 
 ## 🎯 Learning Outcomes
 
 This project demonstrates the implementation of:
 
 - Finite State Machine (FSM) design.
-- Sequential logic in Verilog HDL.
+- Sequential logic using Verilog HDL.
 - Multi-user authentication logic.
-- ATM transaction processing.
+- ATM transaction processing and cash management.
 - RTL design and functional verification using Vivado.
+
+---
 
 ## 👥 Team Hanuman
 
@@ -89,3 +110,7 @@ This project demonstrates the implementation of:
 - **Likhitha Paidi**
 
 ---
+
+⭐ This repository contains the project documentation, FSM diagram, RTL schematic, simulation waveform, and other design artifacts of the **Multi-User ATM Machine** implemented using Verilog HDL and verified in Vivado.
+
+We welcome feedback, suggestions, and discussions on the project.
