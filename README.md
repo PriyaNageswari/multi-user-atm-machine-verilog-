@@ -23,22 +23,6 @@ The design is implemented using **Verilog HDL** and functionally verified using 
 - ⚙️ FSM-based RTL Design
 - ✅ Functional verification using Vivado
 
-## 🏗️ FSM States
-
-The ATM controller consists of **11 FSM states**:
-
-1. IDLE
-2. CARD_INSERTED
-3. ENTER_PIN
-4. PIN_VALIDATION
-5. CHOOSE_ACTION
-6. WITHDRAW
-7. CHECK_BALANCE
-8. DEPOSIT
-9. CHANGE_PIN
-10. CARD_LOCKED
-11. EJECT_CARD
-
 ## 🛠️ Tools Used
 
 - **Language:** Verilog HDL
@@ -55,6 +39,20 @@ The following figures show the overall architecture and verification of the Mult
 
 ![ATM FSM](atm_fsm.png)
 
+The ATM controller consists of **11 FSM states**:
+
+1. IDLE
+2. CARD_INSERTED
+3. ENTER_PIN
+4. PIN_VALIDATION
+5. CHOOSE_ACTION
+6. WITHDRAW
+7. CHECK_BALANCE
+8. DEPOSIT
+9. CHANGE_PIN
+10. CARD_LOCKED
+11. EJECT_CARD
+12. 
 The FSM controls the complete ATM workflow, from card insertion and PIN verification to transaction processing and card ejection.
 
 ---
